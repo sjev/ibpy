@@ -27,6 +27,7 @@ Topic :: Software Development :: Libraries :: Python Modules
 
 doclines = __doc__.split('\n')
 
+import ib
 
 try:  # Python 3
     from distutils.command.build_py import build_py_2to3 as build_py
@@ -35,7 +36,7 @@ except ImportError:  # Python 2
 
 setup(cmdclass = {'build_py': build_py},
     name = 'IbPy',
-    version = "0.8.1-9.70", # major.minor.micro-tws_api_version
+    version = ib.__version__, # major.minor.micro-tws_api_version
     description = doclines[0],
     author = 'Bryce Lampe, Jev Kuznetsov, Troy Melhase',
     author_email = 'jev@tradingwithpython.com',

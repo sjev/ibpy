@@ -6,9 +6,11 @@
 #
 ##
 
+__version__ = "0.8.1-9.70"
+
 # these values substituted during release build.
-api = "0"
-version = "0"
-revision = "r0"
+#api = "0"
+#version = "0"
+#revision = "r0"
 
 
