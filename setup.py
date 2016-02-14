@@ -35,15 +35,15 @@ except ImportError:  # Python 2
 
 setup(cmdclass = {'build_py': build_py},
     name = 'IbPy',
-    version = "0", # make value
+    version = "0.8.1-9.70", # major.minor.micro-tws_api_version
     description = doclines[0],
-    author = 'Troy Melhase',
-    author_email = 'troy@gci.net',
-    url = 'http://code.google.com/p/ibpy/',
+    author = 'Bryce Lampe, Jev Kuznetsov, Troy Melhase',
+    author_email = 'jev@tradingwithpython.com',
+    url = 'https://github.com/sjev/ibpy',
     license = 'BSD License',
     packages = ['ib', 'ib/lib', 'ib/ext', 'ib/opt', 'ib/sym'],
-    classifiers = filter(None, classifiers.split('\n')),
+    #classifiers = filter(None, classifiers.split('\n')),
     long_description = '\n'.join(doclines[2:]),
     platforms = ['any'],
-    download_url = 'http://ibpy.googlecode.com/files/:release_file:',
+    
 )
